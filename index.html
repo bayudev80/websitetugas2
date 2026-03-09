@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Website Profile Saya</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: linear-gradient(to right, #4facfe, #6a82fb);
+        text-align: center;
+      }
+
+      header {
+        background: #2c3e50;
+        color: white;
+        padding: 40px;
+      }
+
+      nav {
+        background: #34495e;
+        padding: 15px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 18px;
+        padding: 8px 15px;
+        border-radius: 5px;
+      }
+
+      nav a:hover {
+        background: #5dade2;
+      }
+
+      .container {
+        padding: 40px;
+      }
+
+      .page {
+        display: none;
+      }
+
+      .page:target {
+        display: block;
+      }
+
+      body:not(:has(:target)) #home {
+        display: block;
+      }
+
+      .card {
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        width: 60%;
+        margin: auto;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      ul {
+        text-align: left;
+        display: inline-block;
+        font-size: 18px;
+      }
+
+      /* Ubah bullet pada Pendidikan menjadi angka romawi */
+      #pendidikan ul {
+        list-style-type: upper-roman;
+      }
+
+      img {
+        border-radius: 10px;
+        margin: 10px;
+      }
+
+      .sosial i {
+        font-size: 30px;
+        margin: 15px;
+        color: #2c3e50;
+        transition: 0.3s;
+      }
+
+      .sosial i:hover {
+        color: #4facfe;
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Website Profile Saya</h1>
+      <p>Tugas Website HTML</p>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#Biodata">Biodata</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#skill">Skill</a>
+      <a href="#hobi">Hobi</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak">Kontak</a>
+      <a href="#sosial">Sosial Media</a>
+    </nav>
+
+    <div class="container">
+      <div id="home" class="page">
+        <div class="card">
+          <h2>Home</h2>
+          <p>Selamat datang di website profile saya yang baru belajar html.</p>
+        </div>
+      </div>
+
+      <div id="Biodata" class="page">
+        <div class="card">
+          <h2>Biodata</h2>
+          <ul>
+            <li>Nama: I Made Bayu Putra Yasa</li>
+            <li>NIM: 2413231006</li>
+            <li>Jurusan: Informatika</li>
+            <li>Usia: 19 Tahun</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="pendidikan" class="page">
+        <div class="card">
+          <h2>Pendidikan</h2>
+          <ul>
+            <li>TK Negeri Pembina Bangli (2011-2012)</li>
+            <li>SD Negeri 4 Bangli (2012-2018)</li>
+            <li>SMP Negeri 2 Bangli (2018-2021)</li>
+            <li>SMA Negeri 2 Bangli (2021-2024)</li>
+            <li>
+              Universitas Hindu Negeri I Gusti Bagus Sugriwa Denpasar
+              (2024-Sekarang)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="skill" class="page">
+        <div class="card">
+          <h2>Skill</h2>
+          <ul>
+            <li>HTML Dasar</li>
+            <li>CSS Dasar</li>
+            <li>Desain Website Sederhana</li>
+            <li>Belajar Coding</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="hobi" class="page">
+        <div class="card">
+          <h2>Hobi</h2>
+          <ul>
+            <li>Main Game</li>
+            <li>Mendengarkan Musik</li>
+            <li>Menonton Film</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="galeri" class="page">
+        <div class="card">
+          <h2>Galeri</h2>
+          <img src="gbr dln.jpeg" width="200" height="200" />
+        </div>
+      </div>
+
+      <div id="kontak" class="page">
+        <div class="card">
+          <h2>Kontak</h2>
+          <p>Email : putrayasamd80@gmail.com</p>
+          <p>Whatsapp : 082146789679</p>
+        </div>
+      </div>
+
+      <div id="sosial" class="page">
+        <div class="card">
+          <h2>Sosial Media</h2>
+          <div class="sosial">
+            <a href="https://instagram.com/debayuuu__" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
